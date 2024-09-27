@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAT BOT</title>
-    <link rel="icon" href="https://www.sat-corp.jp/hubfs/Image/favicon.ico">
+    <title>株式会社エスエーティのサービス紹介</title>
     <style>
         body {
-            font-family: 'Noto Sans JP', 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'MS ゴシック', sans-serif;
+            font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -48,14 +47,14 @@
             color: #555;
         }
 
-        .features {
+        .services {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             gap: 20px;
         }
 
-        .feature {
+        .service {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
@@ -65,12 +64,12 @@
             text-align: center;
         }
 
-        .feature h3 {
+        .service h3 {
             font-size: 1.4em;
             margin-bottom: 10px;
         }
 
-        .feature p {
+        .service p {
             font-size: 1em;
             color: #666;
         }
@@ -109,12 +108,12 @@
 
         /* メディアクエリでスマホ対応 */
         @media (max-width: 768px) {
-            .features {
+            .services {
                 flex-direction: column;
                 align-items: center;
             }
 
-            .feature {
+            .service {
                 flex-basis: 100%;
                 max-width: 400px;
             }
@@ -122,40 +121,6 @@
     </style>
 </head>
 <body>
-
-<header>
-    <h1>AIチャットボットの紹介ページ</h1>
-</header>
-
-<div class="container">
-    <section class="intro">
-        <h2>最先端のAIチャットボットで顧客対応を強化</h2>
-        <p>私たちのAIチャットボットは、自然な会話と高い応答率で、貴社の顧客サポートを効率化します。</p>
-    </section>
-
-    <section class="features">
-        <div class="feature">
-            <h3>24時間対応</h3>
-            <p>AIチャットボットはいつでも顧客対応が可能です。時間を気にせず、顧客の疑問に迅速に応答します。</p>
-        </div>
-        <div class="feature">
-            <h3>自然な会話</h3>
-            <p>最先端の自然言語処理技術を活用し、スムーズで自然な対話を実現します。</p>
-        </div>
-        <div class="feature">
-            <h3>カスタマイズ可能</h3>
-            <p>貴社のニーズに合わせてチャットボットを柔軟にカスタマイズできます。</p>
-        </div>
-    </section>
-
-    <section class="cta">
-        <button>詳しくはこちら</button>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 株式会社エスエーティ. All Rights Reserved.</p>
-</footer>
 
 <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.5/libs/oversea/index.js"></script>
 <script>
@@ -169,6 +134,39 @@
     });
 </script>
 
+<header>
+    <h1>株式会社エスエーティのサービス紹介</h1>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>信頼性と効率性を追求したITインフラサービス</h2>
+        <p>株式会社エスエーティでは、第三者保守やネットワークの設計・構築を通じて、企業のITインフラの最適化をサポートします。</p>
+    </section>
+
+    <section class="services">
+        <div class="service">
+            <h3>第三者保守サービス</h3>
+            <p>メーカー保証外の機器も、安心の保守サービスで長期的にサポート。コスト削減とシステム安定化を実現します。</p>
+        </div>
+        <div class="service">
+            <h3>ネットワーク設計・構築</h3>
+            <p>企業規模や業務ニーズに合わせた最適なネットワークを設計・構築。セキュリティとスケーラビリティを兼ね備えたインフラを提供します。</p>
+        </div>
+        <div class="service">
+            <h3>システム運用・監視</h3>
+            <p>24時間365日体制でのシステム運用・監視を行い、トラブルを未然に防ぎ、安定したシステム運用を支援します。</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <button>お問い合わせはこちら</button>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 株式会社エスエーティ. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
