@@ -120,17 +120,15 @@
         }
         
         /* 常時右下表示 */
-        .fixed-text {
+        .fixed-image {
             position: fixed;
-            right: 10px;
-            bottom: 10px;
-            background-color: rgba(255, 255, 255, 0.7);
-            color: #000000;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 1em;
-            z-index: 1000; /* 他の要素より前に表示 */
+            bottom: 10px; /* 画面下からの距離 */
+            right: 10px; /* 画面右からの距離 */
+            width: 150px; /* 画像の横幅 */
+            height: auto; /* 自動で高さを調整 */
+            z-index: 1000; /* 他の要素より前面に表示 */
         }
+
 
     </style>
 </head>
@@ -180,9 +178,7 @@
     </section>
 </div>
 
-<div class="fixed-text"></div>
-    ご不明な点はChatBotにご質問ください！
-</div>
+<img src="image.png" alt="右下に固定表示される画像" class="fixed-image">
 
 <footer>
     <p>&copy; 2024 株式会社エスエーティ. All Rights Reserved.</p>
