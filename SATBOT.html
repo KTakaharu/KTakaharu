@@ -118,6 +118,15 @@
                 max-width: 400px;
             }
         }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 アスペクト比 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background-color: #000;
+        }
     </style>
 </head>
 <body>
@@ -142,6 +151,17 @@
     <section class="intro">
         <h2>TESTTESTTESTTESTTESTTEST</h2>
         <p>TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST</p>
+    </section>
+
+    <section class="video-container"></section>
+        <!-- YouTube動画を埋め込む場合 -->
+        <!--<iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+        <!-- ローカルまたは他のビデオファイルを埋め込む場合は下記を使用 -->
+        <video controls>
+            <source src="sat_1_minute_PR.mp4" type="video/mp4">
+            お使いのブラウザは動画の再生に対応していません。
+        </video>
     </section>
 
     <section class="services">
