@@ -1,22 +1,174 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAT BOT</title>
     <link rel="icon" href="https://www.sat-corp.jp/hubfs/Image/favicon.ico">
-  </head>
-  <body>
-    <!-- Page Contents -->
-    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.5/libs/oversea/index.js"></script>
-    <script>
-        new CozeWebSDK.WebChatClient({
-          config: {
-            bot_id: '7418849050369458183',
-          },
-          componentProps: {
-            title: 'SAT BOT',icon:'https://www.sat-corp.jp/hubfs/Image/favicon.ico'
-          },
-        });
-    </script>
-  </body>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .intro h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .feature {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex-basis: calc(33% - 20px);
+            min-width: 250px;
+            text-align: center;
+        }
+
+        .feature h3 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* メディアクエリでスマホ対応 */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature {
+                flex-basis: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AIチャットボットの紹介ページ</h1>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>最先端のAIチャットボットで顧客対応を強化</h2>
+        <p>私たちのAIチャットボットは、自然な会話と高い応答率で、貴社の顧客サポートを効率化します。</p>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>24時間対応</h3>
+            <p>AIチャットボットはいつでも顧客対応が可能です。時間を気にせず、顧客の疑問に迅速に応答します。</p>
+        </div>
+        <div class="feature">
+            <h3>自然な会話</h3>
+            <p>最先端の自然言語処理技術を活用し、スムーズで自然な対話を実現します。</p>
+        </div>
+        <div class="feature">
+            <h3>カスタマイズ可能</h3>
+            <p>貴社のニーズに合わせてチャットボットを柔軟にカスタマイズできます。</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <button>詳しくはこちら</button>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 株式会社エスエーティ. All Rights Reserved.</p>
+</footer>
+
+<script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.5/libs/oversea/index.js"></script>
+<script>
+    new CozeWebSDK.WebChatClient({
+      config: {
+        bot_id: '7418849050369458183',
+      },
+      componentProps: {
+        title: 'SAT BOT',icon:'https://www.sat-corp.jp/hubfs/Image/favicon.ico'
+      },
+    });
+</script>
+
+
+</body>
 </html>
