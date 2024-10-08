@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>株式会社エスエーティのサービス紹介</title>
+    <title>SAT BOT</title>
     <style>
         body {
-            font-family: '游ゴシック', Meiryo, sans-serif;
+            font-family: 'Yu Gothic', Meiryo, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+        }
+
+        * {
+            font-family: 'Yu Gothic', Meiryo, sans-serif;
         }
 
         header {
@@ -74,24 +78,26 @@
             color: #666;
         }
 
-        .cta {
-            text-align: center;
-            margin: 40px 0;
+        .center-container {
+            text-align: center; /* 親要素で中央寄せ */
+            margin-top: 20px;
         }
 
-        .cta button {
+        .custom-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            display: inline-block; /* インライン要素をブロック要素に変更 */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .custom-link:hover {
             background-color: #007bff;
             color: #fff;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta button:hover {
-            background-color: #0056b3;
         }
 
         footer {
@@ -122,9 +128,9 @@
         /* 常時右下表示 */
         .fixed-image {
             position: fixed;
-            bottom: 10px; /* 画面下からの距離 */
-            right: 10px; /* 画面右からの距離 */
-            width: 150px; /* 画像の横幅 */
+            bottom: 50px; /* 画面下からの距離 */
+            right: 100px; /* 画面右からの距離 */
+            width: 400px; /* 画像の横幅をさらに大きく */
             height: auto; /* 自動で高さを調整 */
             z-index: 1000; /* 他の要素より前面に表示 */
         }
@@ -152,30 +158,29 @@
 
 <div class="container">
     <section class="intro">
-        <h2 style="font-family: '游ゴシック', Meiryo, sans-serif;">課題を解決する第三者保守とは</h2>
-        <p style="font-family: '游ゴシック', Meiryo, sans-serif;">メーカー保守が終了したサーバ、ストレージ、ネットワーク機器等のITハードウェア機器に対し、メーカー以外の第三者保守会社が保守サービス（故障時の部品交換や修理等）を提供します。</p>
+        <h2>課題を解決する第三者保守とは</h2>
+        <p>メーカー保守が終了したサーバ、ストレージ、ネットワーク機器等のITハードウェア機器に対し、メーカー以外の第三者保守会社が保守サービス（故障時の部品交換や修理等）を提供します。</p>
         <iframe width="700" height="394" src="https://www.youtube.com/embed/AGxAGxAGx" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
-
     <section class="services">
         <div class="service">
-            <h3 style="font-family: '游ゴシック', Meiryo, sans-serif;">グローバルな部品調達！徹底的な品質管理！</h3>
-            <p style="font-family: '游ゴシック', Meiryo, sans-serif;">国内外のパートナーから部品調達が可能で、一つ一つパーツごとに管理しています</p>
+            <h3>グローバルな部品調達！徹底的な品質管理！</h3>
+            <p>国内外のパートナーから部品調達が可能で、一つ一つパーツごとに管理しています</p>
         </div>
         <div class="service">
-            <h3 style="font-family: '游ゴシック', Meiryo, sans-serif;">ネットワーク設計・構築</h3>
-            <p style="font-family: '游ゴシック', Meiryo, sans-serif;">企業規模や業務ニーズに合わせた最適なネットワークを設計・構築。セキュリティとスケーラビリティを兼ね備えたインフラを提供します。</p>
+            <h3>ネットワーク設計・構築</h3>
+            <p>企業規模や業務ニーズに合わせた最適なネットワークを設計・構築。セキュリティとスケーラビリティを兼ね備えたインフラを提供します。</p>
         </div>
         <div class="service">
-            <h3 style="font-family: '游ゴシック', Meiryo, sans-serif;">システム運用・監視</h3>
-            <p style="font-family: '游ゴシック', Meiryo, sans-serif;">24時間365日体制でのシステム運用・監視を行い、トラブルを未然に防ぎ、安定したシステム運用を支援します。</p>
+            <h3>システム運用・監視</h3>
+            <p>24時間365日体制でのシステム運用・監視を行い、トラブルを未然に防ぎ、安定したシステム運用を支援します。</p>
         </div>
     </section>
+    <div class="center-container">
+        <a href="https://www.sat-corp.jp/contact" class="custom-link">お問い合わせはこちら</a>
+    </div>
 
-    <section class="cta">
-        <button onclick="loction.href='https://www.sat-corp.jp/contact'" style="font-family: '游ゴシック', Meiryo, sans-serif;">お問い合わせはこちら</button>
-    </section>
 </div>
 
 <img src="image1.png" alt="右下に固定表示される画像" class="fixed-image">
